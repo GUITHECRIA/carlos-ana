@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="range"] {
+    @apply appearance-none bg-rose-200 h-2 rounded-lg;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    @apply appearance-none w-6 h-6 bg-rose-500 rounded-full cursor-pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    @apply w-6 h-6 bg-rose-500 border-none rounded-full cursor-pointer;
+  }
+}
+
+.canvas-container {
+  touch-action: none;
+}
